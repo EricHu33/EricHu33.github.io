@@ -1,7 +1,11 @@
 ---
-title:  "Health Bar Shader With Procedural ticks"
+title:  "Health Bar Shader With Procedural Ticks"
 header:
   image: /assets/images/hp_header.png
+tags:
+  - Shader
+  - Health Bar
+  - SDF
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 One request from my latest project is that we need a health bar on top of every character that represent it's hp.
@@ -84,6 +88,11 @@ To fix the artifact, instead of directly using UV's x value to draw the ticks. I
 ## Conclusion
 Since I didn't use instancing (because some transparent sorting issue), I get one extra draw call for each health bar. Though it didn't impact the performance much. It should work even better in URP with SRP batcher. 
 
-SDF really open my eyes. we can draw many different shapes just by playing with SDF. Will spent more time study it
+SDF really open my eyes. we can draw many different shapes just by playing with SDF. Will spent more time study it.
 
 
+#### References
+
+ - [2D Signed Distance Field from Ronja's tutorial](https://www.ronja-tutorials.com/post/034-2d-sdf-basics/)
+ - [使用Shader实现LOL血条分割线效果](https://zhuanlan.zhihu.com/p/386528412)
+ - [Healthbars, SDFs & Lighting • Shaders for Game Devs [Part 2] from Freya Holmér](https://www.youtube.com/watch?v=mL8U8tIiRRg)
