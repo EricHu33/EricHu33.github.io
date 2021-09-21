@@ -1,5 +1,6 @@
 ---
 title:  "Health Bar Shader With Procedural Ticks"
+description: "Health Bar Shader With Procedural Ticks"
 header:
   image: /assets/images/hp_header.png
 tags:
