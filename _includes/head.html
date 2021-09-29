@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 
-{% include seo.html %}
-
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% endunless %}
+{%- unless site.atom_feed.hide -%}
+<link
+  href="{%- if site.atom_feed.path -%}{{ site.atom_feed.path }}{%- else -%}{{ '/feed.xml' | relative_url }}{%- endif -%}"
+  type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{%- endunless -%}
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +15,14 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-{% if site.head_scripts %}
-  {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+{%- if site.head_scripts -%}
+{%- for script in site.head_scripts -%}
+<script src="{{ script | relative_url }}"></script>
+{%- endfor -%}
+{%- endif -%}
 <meta name="google-site-verification" content="SiTilitgz3-TmvWyC4B3IXqskTmEw-FRyjzd7ATaqTE" />

@@ -105,6 +105,8 @@ author:
   avatar           : "https://avatars.githubusercontent.com/u/13420668?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Game Developer / Unity Client Engineer"
   location         : "Taiwan"
+  email            : "erichobbygames@gmail.com"
+  linkedin         : "shu-yuan-hu-3359a8b6" 
   links:
     - label: "Contact"
       icon: "fas fa-fw fa-envelope-square"

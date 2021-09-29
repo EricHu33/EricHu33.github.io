@@ -1,6 +1,6 @@
-{% if site.repository and site.comments.staticman.branch %}
-  <script>
-    (function ($) {
+{%- if site.repository and site.comments.staticman.branch -%}
+<script>
+  (function ($) {
     $('#new_comment').submit(function () {
       var form = this;
 
@@ -36,5 +36,5 @@
       $('.page__comments-form .js-notice-text').html(message);
     }
   })(jQuery);
-  </script>
-{% endif %}
+</script>
+{%- endif -%}
