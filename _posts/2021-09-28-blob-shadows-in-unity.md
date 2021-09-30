@@ -11,7 +11,7 @@ tags:
   - Blob
   - Fake Shadow
   - Shadows
-  - Instancing
+  - GPU Instancing
   - Job System
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
