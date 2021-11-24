@@ -68,19 +68,3 @@ To find the correct projected point on the ground. We need to cast a ray downwar
 
 ![image (1)](https://user-images.githubusercontent.com/13420668/135379258-09d463a4-5546-4780-be43-1fc2692e009c.png)
 > cast a ray downward to find the desired projected point for decal shadows
-
-# Demo
-This is the final result of combining techniques I mentioned above. We now have a system that draw many fake shadow at one time, with the ability to follow dynamic objects and projected on an uneven surface!
-
-<iframe width="100%" height="400" src="https://user-images.githubusercontent.com/13420668/135380490-6a89be72-4c6e-4fe6-a27f-f5e8a1104260.mp4
-" frameborder="0" allowfullscreen></iframe>
-
-## Conclusion
-Blob shadows has a long histroy and different implementation throghout the development of games. The technique itself is old. But still very useful specially for mobile game. I'm looking forward to study more way to draw a shadow.
-
-#### References
-
- - [Job System Tutorial](hhttps://www.jacksondunstan.com/articles/4796)
- - [Improve Performance with C# Job System and Burst Compiler in Unity](https://realerichu.medium.com/improve-performance-with-c-job-system-and-burst-compiler-in-unity-eecd2a69dbc8)
- - [Unlit Dynamic Decals/Projection](https://www.ronja-tutorials.com/post/054-unlit-dynamic-decals/)
- - [UnityURPUnlitScreenSpaceDecalShader](https://github.com/ColinLeung-NiloCat/UnityURPUnlitScreenSpaceDecalShader)
